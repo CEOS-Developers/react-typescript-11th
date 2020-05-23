@@ -1,12 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function PostContent({
+import { PostContent } from "../../types/Post";
+
+export type PostCardContentProps = PostContent;
+
+export default function PostCardContent({
   mbti,
   explanationLink,
   explanation,
   imageUrl,
-}) {
+}: PostCardContentProps) {
   return (
     <Wrapper>
       <Mbti href={explanationLink}>{mbti}</Mbti>

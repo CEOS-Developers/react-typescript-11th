@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import Post from ".";
 
-export default function PostList({ postList }) {
+import Post, { PostCardProps } from ".";
+
+export type PostCardListProps = { postList: PostCardProps[] };
+
+export default function PostList({ postList }: PostCardListProps) {
   return (
     <Wrapper>
       {postList.map((post, index) => (
         <>
-          <Post {...post} />
+          <Post {...(post as PostCardProps)} />
           {index !== postList.length - 1 && <Line />}
         </>
       ))}

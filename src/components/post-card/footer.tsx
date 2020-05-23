@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+
+import { IPost } from "../../interfaces/IPost";
 import HeartIcon from "../../asset/icons/heart";
 
-export default function PostFooter({ likeCount }) {
+export type PostCardFooterProps = Pick<IPost, "likeCount">;
+
+export default function PostCardFooter({ likeCount }: PostCardFooterProps) {
   const [isLiked, setIsLiked] = useState(false);
   const handleClick = () => {
     setIsLiked(!isLiked);
