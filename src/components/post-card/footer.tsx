@@ -7,7 +7,7 @@ import HeartIcon from "../../asset/icons/heart";
 export type PostCardFooterProps = Pick<IPost, "likeCount">;
 
 export default function PostCardFooter({ likeCount }: PostCardFooterProps) {
-  const [isLiked, setIsLiked] = useState(false);
+  const [isLiked, setIsLiked] = useState<boolean>(false);
   const handleClick = () => {
     setIsLiked(!isLiked);
   };

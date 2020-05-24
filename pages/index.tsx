@@ -29,7 +29,7 @@ const postList = [
     profileImageUrl:
       "https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/98204210_2978951335514369_2997523032395743232_n.jpg?_nc_cat=109&_nc_sid=8024bb&_nc_oc=AQm1unmVqeP-2rqYn_l3XHXT0S9ap6LLwU4uD_qpADpfeV1owuO_sBy56de_Qn9Dh3c&_nc_ht=scontent-ssn1-1.xx&oh=6d88cbde569fbad2707177733efeeea5&oe=5EEFCAF8",
     content: {
-      mbti: "ESFJ(사교적인 외교관형)",
+      mbti: "ESFJ(사교적인 외교관)",
       explanationLink:
         "https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-esfj",
       explanation:
